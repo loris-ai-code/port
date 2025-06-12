@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loro portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Myportfolio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="Imagesa/logo2.jpg" width="80px" height="80px"></a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<section>
+    
+
+    <section class="home">
+        <div class="home-info">
+            <h1>Francis Loro</h1>
+            <h2>I'm a 
+                <span>
+                    <span >FrontendDeveloper</span>
+                    <span >DatabaseDeveloper</span>
+                    
+                   
+                </span>
+                
+            </h2>
+            <p>"Innovating through code, crafting solutions that empower and inspire.<br>
+                Building seamless experiences with technology that drives change"</p>
+            <div class="btn-sci">
+               <a href="#" class="btn">HIRE ME</a>
+                <div class="sci">
+                   <a href="https://github.com/FRANCIS LORO" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://twitter.com/in/@Loro7Loro" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.tiktok.com/@lorisco10" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+                    <a href="https://youtube.com/@FRANCISLORO" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    
+              </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="Imagesa/Loris3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        "I am a passionate Frontend developer<br> who creates efficient, user-friendly web applications.<br>
+        I have experience working with modern tools like HTML, CSS, JavaScript, and SQL.<br>
+        I enjoy turning complex problems into simple, beautiful, and intuitive designs"
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="Imagesa/ABOUTMEPIC.JPG" alt="Francis Loro">
+    </div>
+  </div>
+</section>
+
+<section class="project">
+    <h2>My Projects</h2>
+</section>
+
+<section class="work">
+    <h2>My Service</h2>
+</section>
+
+<section class="contacts">
+    <h2>Let's Connect</h2>
+    <form id="contact-form"  action="https://formspree.io/f/mnnvpqqv" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+  <p id="form-message"></p>
+</section>
+
+<section class="last">
+    <footer class="site-footer">
+  <p>© <span id="year"></span> - FRANCIS LORO </p>
+   <p class="sim">All Rights Reserved</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</section>
+
+<script src="Myportfolio.js"></script>
+ 
+</body>
+</html>

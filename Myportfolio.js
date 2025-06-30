@@ -65,4 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+const backToTop = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
 

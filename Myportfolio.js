@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
   //  Typing Effect
   const words = ["Frontend Developer", "Database Developer", "Graphic Designer"];
@@ -15,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!isDeleting && charIndex === currentWord.length) {
       setTimeout(() => (isDeleting = true), 1000); 
-    } else if (isDeleting && charIndex === 0) {
+    }
+     else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
     }
@@ -24,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   typeEffect(); 
+
 
   // Contact Form Submission 
   const form = document.getElementById('contact-form');
@@ -42,9 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
           'Accept': 'application/json'
         }
       })
+
         .then(function (response) {
           if (response.ok) {
-            message.textContent = 'Webaale Nyo! loro will check it.';
+            message.textContent = 'Webaale Nyo! lolo will check it.';
             message.style.color = '#7cf03d';
             form.reset();
           } else {
@@ -59,3 +64,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+

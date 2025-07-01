@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
             message.textContent = 'Nedda,You have a problem.';
             message.style.color = 'Green';
           }
+
+           setTimeout(function () {
+              message.textContent = '';
+          }, 4000); 
+
         })
         .catch(function () {
           message.textContent = 'Perhaps, the internet is not favoring.';
@@ -65,14 +70,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const backToTop = document.querySelector('.back-to-top');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.style.display = 'block';
-    } else {
-      backToTop.style.display = 'none';
-    }
-  });
 
 

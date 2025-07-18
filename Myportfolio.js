@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         .then(function (response) {
           if (response.ok) {
-            message.textContent = 'Webaale Nyo! lolo will check it.';
+            message.textContent = 'Thank you for your submission.';
             message.style.color = '#7cf03d';
             form.reset();
           } else {
-            message.textContent = 'Nedda,You have a problem.';
+            message.textContent = 'You have an error.';
             message.style.color = 'Green';
           }
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
         .catch(function () {
-          message.textContent = 'Perhaps, the internet is not favoring.';
+          message.textContent = 'Perhaps, the internet is not favoring .';
           message.style.color = 'red';
         });
     });
